@@ -13,7 +13,6 @@ body {
   color: #4CCACC;
 }
 
-
 h1 {
   font-weight: lighter;
   font-size: 40px;
@@ -52,20 +51,24 @@ input {
   width: 70px;
   font-family: inherit;
   font-size: 14px;
-  background-color: #FFD700;
+  color: white;
+  background-color: #4CCACC;
   border: none;
   outline: none;
 }
 
-.addOption:hover {
-  background-color: #4CCACC;
+button:hover {
+  box-shadow: 0 3px 0 0 rgba(22, 29, 37, 0.05);
+  background-image: linear-gradient(-180deg, #46BBBD 0%, #4CCACC 100%);
 }
 
 .goButton {
   font-size: 16px;
-  background-color: #FFD700;
+  background-color: #4CCACC;
+  color: white;
   border: none;
   height: 40px;
   width: 80px;
   outline: none;
 }
+/*yellow: #FFD700*/
