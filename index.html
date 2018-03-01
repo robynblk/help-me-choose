@@ -10,7 +10,7 @@
   <body>
     <h1>Help me choose between...</h1>
     <div class="inputSection">
-      <div class="input">
+      <div class="inputs">
         <input placeholder="Something"</input>
       </div>
       <button class="addOption">Add</button>
@@ -24,18 +24,36 @@
         $('.resultSection').hide()
 
         var add_option = function() {
-          $('.input').append('<input></input>')
+          $('.inputs').append('<input></input>')
           }
-
           $('.addOption').click(add_option)
 
           var change_color = function() {
             $('h1').toggleClass('blueClass')
           }
-
           $('h1').click(change_color)
 
-          });
+          /* Add input to array*/
+          var options = []
+
+          var submit = function() {
+            $('.inputSection').hide()
+            $('.resultSection').css('display','flex')
+            $('input').each(function() {
+              var value = $(this).val();
+              if (value) {
+                options.push($(this).val())
+                }
+            })
+            var winner = options[Math.floor(Math.random() * options.length)]
+            console.log(winner)
+            $('.resultSection').text(winner)
+            $('h1').text('And the winner is....')
+            }
+
+
+          $('.goButton').click(submit)
+          })
 
     </script>
   </body>

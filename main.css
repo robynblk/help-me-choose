@@ -28,7 +28,7 @@ h1 {
   font-family: inherit;
 }
 
-.input {
+.inputs {
   width: inherit;
   display: flex;
   flex-direction: column;
@@ -70,5 +70,14 @@ button:hover {
   height: 40px;
   width: 80px;
   outline: none;
+}
+
+.resultSection {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  font-size: 34px;
+  color: #4134FF;
 }
 /*yellow: #FFD700*/
